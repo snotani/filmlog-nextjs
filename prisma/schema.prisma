@@ -1,0 +1,23 @@
+// Filmlog database schema.
+//
+// We're using SQLite locally for zero-setup dev (a single file at prisma/dev.db).
+// In production we'll switch the provider to "postgresql".
+//
+// Models will be added in later phases as the app needs them:
+//   Phase 2 -> User, Account, Session, VerificationToken (Auth.js)
+//   Phase 3 -> Film, Entry
+//   Phase 4 -> ratings + reviews on Entry
+//   Phase 5 -> Watchlist, List, ListItem
+//   Phase 6 -> Follow
+//
+// To apply schema changes:  npm run db:push
+
+generator client {
+  provider = "prisma-client"
+  output   = "../lib/generated/prisma"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}

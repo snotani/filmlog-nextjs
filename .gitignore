@@ -41,5 +41,14 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
+# prisma generated client (regenerated via npm run db:generate)
+/lib/generated
+
+# local sqlite databases (regenerated via npm run db:push)
+/prisma/*.db
+/prisma/*.db-journal
+
 # teaching project: reference solution and lesson notes must never be committed
 /solution
+
+/lib/generated/prisma
