@@ -12,6 +12,8 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Don't lint the teacher's reference build — it has its own toolchain.
+    "solution/**",
   ]),
 ]);
 

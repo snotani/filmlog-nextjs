@@ -4,6 +4,13 @@ A Letterboxd-lite movie diary app you'll build phase by phase to learn Next.js e
 
 > This is a teaching project. The full app pitch, requirements, and per-phase briefs live in [`docs/`](docs/).
 
+## How to use this repo
+
+1. Read the [product brief](docs/requirements.md) so you know the destination.
+2. Set up your environment with [getting started](docs/getting-started.md).
+3. Work through the phases below in order. Each one has a short brief with goals, a task list, and links to docs.
+4. After every phase, run `npm run lint && npm run build` — green build = ready for the next phase.
+
 ## Quick start
 
 1. Clone the repo.
