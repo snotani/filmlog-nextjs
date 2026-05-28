@@ -9,9 +9,10 @@ A Letterboxd-lite movie diary app you'll build phase by phase to learn Next.js e
 1. Clone the repo.
 2. `npm install`
 3. Copy `.env.example` to `.env.local` and fill in the values.
-4. `npm run dev`
+4. `npm run db:generate`
+5. `npm run dev`
 
-Detailed setup instructions: [`docs/getting-started.md`](docs/getting-started.md) _(coming soon)_.
+Detailed setup, troubleshooting, and useful scripts: [`docs/getting-started.md`](docs/getting-started.md).
 
 ## What you'll build
 
@@ -25,22 +26,24 @@ A small but real movie-tracking app:
 
 ## Lesson roadmap
 
-Each phase ships a visible feature and introduces a cluster of Next.js concepts.
+Each phase ships a visible feature and introduces a cluster of Next.js concepts. Open the per-phase brief for goals, acceptance criteria, and task list.
 
-- Phase 0 — Setup & App Router foundations
-- Phase 1 — Browsing films (RSC, dynamic routes, ISR, metadata)
-- Phase 2 — Search & loading/error states (Route Handlers)
-- Phase 3 — Auth & profiles (Auth.js v5, middleware)
-- Phase 4 — The diary (Server Actions, mutations)
-- Phase 5 — Ratings & reviews (client/server boundary)
-- Phase 6 — Lists & OG images (Prisma relations, `next/og`)
-- Phase 7 — Follow & feed (caching, revalidation)
-- Phase 8 — Polish & deploy (Suspense streaming, SEO, Vercel)
-
-Per-phase briefs land in [`docs/phases/`](docs/phases/) as we go.
+- Phase 0 — [Setup & App Router foundations](docs/phases/00-setup.md)
+- Phase 1 — [Browsing films](docs/phases/01-browsing-films.md) (RSC, dynamic routes, ISR, metadata)
+- Phase 2 — [Search & loading/error states](docs/phases/02-search-and-loading-states.md) (Route Handlers)
+- Phase 3 — [Auth & profiles](docs/phases/03-auth-and-profiles.md) (Auth.js v5, middleware)
+- Phase 4 — [The diary](docs/phases/04-the-diary.md) (Server Actions, mutations)
+- Phase 5 — [Ratings & reviews](docs/phases/05-ratings-and-reviews.md) (client/server boundary)
+- Phase 6 — [Lists & OG images](docs/phases/06-lists-and-og-images.md) (Prisma relations, `next/og`)
+- Phase 7 — [Follow & feed](docs/phases/07-follow-and-feed.md) (caching, revalidation)
+- Phase 8 — [Polish & deploy](docs/phases/08-polish-and-deploy.md) (Suspense streaming, SEO, Vercel)
 
 ## Stack
 
-Next.js 15 (App Router) - TypeScript - Tailwind CSS - shadcn/ui - Prisma - Auth.js v5 - Zod - Resend - TMDB - Vercel.
+Next.js 16 (App Router) - TypeScript - Tailwind CSS - shadcn/ui - Prisma - Auth.js v5 - Zod - Resend - TMDB - Vercel.
 
-Full rationale: [`docs/tech-stack.md`](docs/tech-stack.md) _(coming soon)_.
+Full rationale: [`docs/tech-stack.md`](docs/tech-stack.md).
+
+## Product brief
+
+Full feature inventory, route map, and data model: [`docs/requirements.md`](docs/requirements.md).
